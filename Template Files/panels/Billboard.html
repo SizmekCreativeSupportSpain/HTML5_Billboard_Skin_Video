@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Billboard</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+	<script>
+
+		function startAd() {
+			document.getElementById("clickthroughButton").addEventListener('click', function () {
+				adkit.expand({
+					panelName: "Video_Panel",
+					actionType: adkit.ActionType.USER,
+					expandToMax: !0,
+					useCustomClose: true
+				});
+			});
+		}
+
+		adkit.onReady(startAd);
+
+	</script>
+</head>
+
+<body class="billboard">
+	<button id="clickthroughButton" class="button"></button>
+	<img src="images/billboard.jpg" alt="Billboard" />
+</body>
+
+</html>

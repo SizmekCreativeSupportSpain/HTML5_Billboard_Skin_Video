@@ -1,0 +1,141 @@
+/* RESET BLOCK */
+
+html,
+body,
+div,
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  position: absolute;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+}
+
+#skyViewController{
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.sky{
+  width: 456px;
+  height: 1080px;
+}
+
+.sky #sky_der, .sky #sky_izq{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.billboard{
+  width: 1024px;
+  height: 250px;
+}
+
+.video-panel{
+  width: 100%;
+  height: 100%;
+}
+
+body.video-panel {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-panel button {
+  
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.video-panel video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-panel #expansion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#clickthroughButton {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.video-panel #videoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.video-panel .button {
+  height: 44px;
+  width: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99;
+}
+
+.video-panel #closeButton {
+  top: 10px;
+  right: 10px;
+  background-image: url("images/close.png");
+
+}
+
+.video-panel #controlButton {
+  bottom: 10px;
+  right: 10px;
+}
+
+.video-panel #audioButton {
+  bottom: 10px;
+  left: 10px;
+}
+
+/*********UTILS**********/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.centeredY {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.centeredX {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
